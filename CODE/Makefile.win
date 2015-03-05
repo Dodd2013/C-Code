@@ -1,15 +1,15 @@
-# Project: 2
+# Project: 项目1
 # Makefile created by Dev-C++ 5.4.0
 
 CPP      = g++.exe -D__DEBUG__
 CC       = gcc.exe -D__DEBUG__
 WINDRES  = windres.exe
-OBJ      = 2.o $(RES)
-LINKOBJ  = 2.o $(RES)
-LIBS     = -L"C:/2014环境/Dev-Cpp/MinGW32/lib" -static-libstdc++ -static-libgcc -g3
-INCS     = -I"C:/2014环境/Dev-Cpp/MinGW32/include"
-CXXINCS  = -I"C:/2014环境/Dev-Cpp/MinGW32/include"
-BIN      = 2.exe
+OBJ      = main.o $(RES)
+LINKOBJ  = main.o $(RES)
+LIBS     = -L"E:/Dev-Cpp/Dev-Cpp/MinGW32/lib" -static-libstdc++ -static-libgcc -g3
+INCS     = -I"E:/Dev-Cpp/Dev-Cpp/MinGW32/include"
+CXXINCS  = -I"E:/Dev-Cpp/Dev-Cpp/MinGW32/include"
+BIN      = 项目1.exe
 CXXFLAGS = $(CXXINCS)  -g3
 CFLAGS   = $(INCS)  -g3
 RM       = rm -f
@@ -25,5 +25,5 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-2.o: 2.cpp
-	$(CPP) -c 2.cpp -o 2.o $(CXXFLAGS)
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
